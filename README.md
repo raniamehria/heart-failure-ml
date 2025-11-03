@@ -1,8 +1,17 @@
-# 🧠 Heart Failure Diagnosis – Machine Learning Project  
+#  Heart Failure Diagnosis – Machine Learning Project  
 
-##  Business Challenge  
-→ Contexte du problème, objectifs, valeur business  
-→ Expliquer pourquoi ce projet a un intérêt économique et médical  
+##  Business Challenge   
+
+Heart failure is one of the leading causes of hospitalization worldwide and represents a major financial burden for healthcare systems.  
+Each hospital admission costs between **€5,000 and €12,000**, and **1 in 4 patients** is readmitted within 30 days (HAS, CNAM, ESC 2021–2022).  
+
+This project aims to build a **machine learning model** that predicts a patient’s risk of heart failure based on medical data such as age, cholesterol, and blood pressure.  
+
+By identifying high-risk patients early, healthcare providers can:
+- **Reduce readmission rates and treatment costs**  
+- **Improve resource allocation and preventive care**  
+- **Support data-driven decisions for doctors and insurers**
+
 
 ##  Dataset Description  
 → D’où viennent les données (Kaggle)  
@@ -43,7 +52,5 @@
    4. (Optionnel) Lancer l’API Flask  
 
 ##  Authors  
-→ Vos noms, année, école  
+→  noms, année, école  
 
-##  To Do  
-→ Cases à cocher pour les parties restantes (EDA, modèles, résultats, etc.)
