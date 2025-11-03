@@ -72,7 +72,7 @@ Build a supervised machine learning model that predicts the risk of heart failur
 
 7. **Clean Dataset Saved:**  
    - File: `data/heart_failure_clean.csv`  
-   - Ready for modeling phase 🚀  
+   - Ready for modeling phase   
 
 ---
 
