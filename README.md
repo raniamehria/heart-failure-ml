@@ -295,7 +295,7 @@ heart-failure-ml/
 * The exported model is the **Optimized Random Forest**.
 * All experiments (LogReg, RF, SVM, XGBoost) are inside `eda.ipynb`.
 
-```
+
 
 ##  Final Results & Model Summary
 
