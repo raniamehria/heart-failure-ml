@@ -1,24 +1,20 @@
 import joblib
 import numpy as np
-from flask import Flask, request, jsonify
 
+# Charger le modèle sauvegardé
 bundle = joblib.load("model.pkl")
+
 model = bundle["model"]
 scaler = bundle["scaler"]
 feature_names = bundle["features"]
 
-app = Flask(__name__)
+print("✔ Modèle chargé :", model)
 
-@app.route("/predict", methods=["POST"])
-def predict():
-    data = request.get_json()
-    features = np.array(data["features"]).reshape(1, -1)
+# Exemple d’utilisation locale (facultatif)
+# Remplace par une vraie ligne du dataset si tu veux tester
+example = np.array([50, 1, 168, 70, 120, 80, 1, 1, 0, 1, 0, 0]).reshape(1, -1)
 
-    # normalisation
-    features_scaled = scaler.transform(features)
+example_scaled = scaler.transform(example)
+prediction = model.predict(example_scaled)
 
-    prediction = model.predict(features_scaled)
-    return jsonify({"prediction": int(prediction[0])})
-
-if __name__ == "__main__":
-    app.run(debug=True)
+print("Prédiction :", prediction[0])
